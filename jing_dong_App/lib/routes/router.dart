@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:jing_dong_app/routes/search.dart';
+import '../Viewcontrollers/CategoryViewControllers/ProductList.dart';
+import '../Viewcontrollers/OtherViewControllers/ProductContent.dart';
 import '../tabs/Tabs.dart';
-// import '../pages/Search.dart';
 //配置路由的地方：
 final routes = {
   '/': (context) => Tabs(),
+  '/productList': (context,{arguments}) => ProductListPage(arguments),
+  '/productContent': (context,{arguments}) => ProductContentPage(arguments)
   // '/search': (context) => SearchPage(),
 };
 //固定写法：
